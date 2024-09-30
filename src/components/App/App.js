@@ -1,9 +1,16 @@
+import React from 'react'
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults.js';
+import Playlist from '../Playlist/Playlist';
 
-
-function App() {
+const App = () => {
   return (
-    <h1>The Jamming App</h1>
-  );
+    <div className="app">
+      <h1>Jamming App</h1>
+      <SearchBar />
+      <SearchResults />
+      <Playlist />
+    </div>
+  )
 }
-
 export default App;
