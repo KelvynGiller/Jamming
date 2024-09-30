@@ -1,0 +1,11 @@
+.playlist {
+    background-color: #282828; /* Fundo escuro */
+    padding: 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 100%; /* Largura total */
+}
+
+.playlist h2 {
+    margin-bottom: 10px;
+    font-size: 24px; /* Tamanho da fonte */
+}

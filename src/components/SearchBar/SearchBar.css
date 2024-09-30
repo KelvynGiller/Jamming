@@ -1,0 +1,28 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px; /* Largura fixa */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #1DB954; /* Verde Spotify */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #1AA34A; /* Efeito hover mais escuro */
+}

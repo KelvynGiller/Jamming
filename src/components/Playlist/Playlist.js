@@ -1,5 +1,6 @@
 import React from "react";
 import Tracklist from "../Tracklist/Tracklist";
+import './Playlist.css';
 
 const Playlist = () => {
     const playlistTracks = [];
