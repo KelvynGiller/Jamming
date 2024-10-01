@@ -1,16 +1,12 @@
-import React from "react"; 
-import './Track.css';
-
+import React from 'react';
 
 const Track = ({ track }) => {
-    return (
-    <div className="track">
-        <h3>{track.name}</h3>
-        <p>{track.artist}</p>
-        <p>{track.album}</p>
-
+  return (
+    <div className="Track">
+      <h3>{track.name}</h3>
+      <p>by {track.artist}, from {track.album}</p>
     </div>
-    )
+  );
 }
 
 export default Track;

@@ -1,23 +1,28 @@
 .search-results {
-    width: 100%; /* Largura total */
+    width: 100%; 
     padding: 20px;
-    background-color: #282828; /* Fundo escuro */
-    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #282828; 
+    border-radius: 5px;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .search-results h2 {
     margin-bottom: 10px;
-    font-size: 24px; /* Tamanho da fonte */
+    font-size: 24px; 
 }
 
 .track {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-    border-bottom: 1px solid #B3B3B3; /* Linha separadora */
+    border-bottom: 1px solid #B3B3B3; 
+    margin-bottom: 10px;
+}
+.track p {
+    margin-bottom: 10px;
 }
 
 .track:last-child {
-    border-bottom: none; /* Remove a linha da última track */
+    border-bottom: none;
 }
