@@ -7,7 +7,7 @@ import './App.css';
 
 
 const App = () => {
- 
+
   const [searchResults, setSearchResults] = useState([
     { id: 1, name: "Song 1", artist: "Artist 1", album: "Album 1" },
     { id: 2, name: "Song 2", artist: "Artist 2", album: "Album 2" },
@@ -15,18 +15,29 @@ const App = () => {
   ]
 );
   const [playlistName, setPlaylistName] = useState('My Playlist');
-  
+ 
   const [playlistTracks, setPlaylistTracks] = useState([
     { id: 4, name: 'Playlist Song 1', artist: 'Artist 4', album: 'Album 4' },
     { id: 5, name: 'Playlist Song 2', artist: 'Artist 5', album: 'Album 5' }
   ]);
-console.log(searchResults);
+  const updatePlaylistName = (newName) => {
+    console.log('New Playlist Name:', newName);
+    setPlaylistName(newName);
+};
+
+
   return (
     <div className="app">
       <h1>Jamming App</h1>
       <SearchBar />
-      <SearchResults searchResults={searchResults} />
-      <Playlist  playlistName={playlistName} playlistTracks={playlistTracks} />
+      <SearchResults
+        searchResults={searchResults} 
+      />
+      <Playlist 
+        playlistName={playlistName} 
+        playlistTracks={playlistTracks} 
+        updatePlaylistName={updatePlaylistName} 
+      />
     </div>
   );
 }
