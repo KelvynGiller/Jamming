@@ -1,17 +1,20 @@
-import React from "react"; 
-import Track from "../Track/Track"; 
-import './Tracklist.css';
+import React from 'react';
+import Track from '../Track/Track';
 
+const TrackList = ({ tracks, removeTrack, isRemoval }) => {
+  return (
+    <div>
+      {tracks.map(track => (
+        <Track 
+        key={track.id} 
+        track={track} 
+        addTrack={addTrack} 
+        removeTrack={removeTrack} 
+        isRemoval={true} 
+    />
+      ))}
+    </div>
+  );
+};
 
-
-const Tracklist = ({tracks}) => {
-    return (
-        <div className="tracklist">
-            {tracks.map(track => (
-                <Track key={track.id} track={track} />
-            ))}
-        </div>
-    )
-}
-
-export default Tracklist;
+export default TrackList;
