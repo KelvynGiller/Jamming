@@ -2,13 +2,13 @@ import React from "react";
 import Tracklist from "../Tracklist/Tracklist";
 import './Playlist.css';
 
-const Playlist = () => {
-    const playlistTracks = [];
+const Playlist = ({ playlistTracks, playlistName }) => {
+
     return (
         <div className="playlist">
-            <h2>Your Playlist</h2>
+            <input value={playlistName} />
             <Tracklist tracks={playlistTracks} />
-            <button>Save to spotify</button> 
+            <button className="playlist-save">SAVE TO SPOTIFY!</button> 
 
         </div>
     )
