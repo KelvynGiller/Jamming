@@ -3,6 +3,7 @@ import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults.js';
 import Playlist from '../Playlist/Playlist';
 import './App.css';
+import Spotify from '../../Spotify.js';
 
 const App = () => {
   //mocha data
@@ -45,25 +46,37 @@ const savePlaylist = () => {
   setPlaylistName('New Playlist');
   setPlaylistTracks([]);
 };
+//search function
+const searchSpotify = (term) => {
+  Spotify.search(term).then(tracks => {
+    setSearchResults(tracks);
+  });
+};
+
+
 
 //return statement
-  return (
+return (
+  <div>
+    
     <div className="app">
-      <h1>Jamming App</h1>
-      <SearchBar />
-      <SearchResults
-        searchResults={searchResults}
-        addTrack={addTrack} 
-      />
-      <Playlist 
-        playlistName={playlistName} 
-        playlistTracks={playlistTracks} 
-        updatePlaylistName={updatePlaylistName} 
-        removeTrack={removeTrack}
-        savePlaylist={savePlaylist}
-      />
+    <h1>Ja<span className="highlight">mmm</span>ing</h1>
+      <SearchBar onSearch={searchSpotify} />
+      <div className="app-playlist">
+        <SearchResults
+          searchResults={searchResults}
+          addTrack={addTrack}
+        />
+        <Playlist
+          playlistName={playlistName}
+          playlistTracks={playlistTracks}
+          removeTrack={removeTrack}
+          updatePlaylistName={updatePlaylistName}
+          savePlaylist={savePlaylist}
+        />
+      </div>
     </div>
-  );
-}
-
+  </div>
+);
+};
 export default App;
