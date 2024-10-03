@@ -24,8 +24,10 @@ Follow the steps below to run the application locally:
    git clone https://github.com/your-username/jammming.git
    cd jammming
 2. Install dependencies:
+   ```bash
     npm install
 3. Start the app:
+    ````bash
     npm start
 
 ## How to use
