@@ -1,4 +1,5 @@
 import React from 'react';
+import './Track.css';
 
 const Track = ({ track, addTrack, removeTrack, isRemoval }) => {
   console.log("Received Track:", track);

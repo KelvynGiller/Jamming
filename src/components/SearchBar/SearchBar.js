@@ -15,12 +15,13 @@ const SearchBar = ({ onSearch }) => {
     };
   
     return (
-      <div>
+      <div class="search-bar"> 
         <input
           placeholder="Search for a song"
           value={term}
           onChange={handleChange}
-          onKeyPress={handleKeyPress}
+          type="text"
+          className="input"
         />
         <button onClick={() => onSearch(term)}>Search</button>
       </div>

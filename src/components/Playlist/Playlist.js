@@ -8,8 +8,8 @@ const Playlist = ({ playlistName, playlistTracks, updatePlaylistName, removeTrac
     };
   
     return (
-      <div className="playlist">
-        <input value={playlistName} onChange={handleNameChange} />
+      <div className="playlist-container">
+        <input className="playlist-title" value={playlistName} onChange={handleNameChange} />
         {playlistTracks.map(track => (
     <Track 
         key={track.id} 

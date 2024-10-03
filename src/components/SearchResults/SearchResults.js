@@ -7,7 +7,7 @@ const SearchResults = ({ searchResults, addTrack }) => {
   console.log("AddTrack:", addTrack);
   const [results, setResults] = useState([]);
   return (
-    <div className="SearchResults">
+    <div class="search-results" className="SearchResults">
       <h2>Results:</h2>
       {searchResults.map(track => (
         <Track 

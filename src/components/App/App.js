@@ -52,23 +52,26 @@ const searchSpotify = (term) => {
 
 //return statement
 return (
-  <div>
-    
-    <div className="app">
-    <h1>Jammming App</h1>
-      <SearchBar onSearch={searchSpotify} />
-      <div className="app-playlist">
-        <SearchResults
-          searchResults={searchResults}
-          addTrack={addTrack}
-        />
-        <Playlist
-          playlistName={playlistName}
-          playlistTracks={playlistTracks}
-          removeTrack={removeTrack}
-          updatePlaylistName={updatePlaylistName}
-          savePlaylist={savePlaylist}
-        />
+  <div className="container">
+    <h1 className="app-title">Jamming App</h1>
+    <div className='panels'>
+    <div className="left-panel">
+      <h2>Search Songs</h2>
+      <SearchBar onSearch={searchSpotify} className="title" />
+      <SearchResults
+        searchResults={searchResults}
+        addTrack={addTrack}
+      />
+    </div>
+    <div className="right-panel">
+      <h2>Your Playlist</h2>
+      <Playlist 
+        playlistName={playlistName}
+        playlistTracks={playlistTracks}
+        updatePlaylistName={updatePlaylistName}
+        removeTrack={removeTrack}
+        savePlaylist={savePlaylist}
+      />
       </div>
     </div>
   </div>
