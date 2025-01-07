@@ -1,0 +1,16 @@
+.results-container {
+    margin-top: 20px;
+}
+
+.track {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.track:hover {
+    transform: scale(1.02); 
+}
