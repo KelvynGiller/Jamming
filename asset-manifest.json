@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Jamming/static/css/main.2dbb0ca0.css",
+    "main.js": "/Jamming/static/js/main.0d842fb2.js",
+    "static/media/StockCake-DJ in Action_1727975834.jpg": "/Jamming/static/media/StockCake-DJ in Action_1727975834.f870e5b15b495e63773d.jpg",
+    "index.html": "/Jamming/index.html",
+    "main.2dbb0ca0.css.map": "/Jamming/static/css/main.2dbb0ca0.css.map",
+    "main.0d842fb2.js.map": "/Jamming/static/js/main.0d842fb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dbb0ca0.css",
+    "static/js/main.0d842fb2.js"
+  ]
+}
