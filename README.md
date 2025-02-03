@@ -41,6 +41,5 @@ Follow the steps below to run the application locally:
 ### Contact
 If you have any questions or suggestions, feel free to reach out to me:
 
-Name: Kelvyn Giller
-Email: kelvyngiller9@gmail.com  
-GitHub: kelvyn-giller
+Kelvyn Giller
+kelvyngiller9@gmail.com 
